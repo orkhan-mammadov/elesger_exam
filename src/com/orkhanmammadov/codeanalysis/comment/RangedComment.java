@@ -20,8 +20,5 @@ public class RangedComment extends SourceCodeElement implements SuspiciousCommen
         }
     }
 
-    @Override
-    public boolean isSuspicious() {
-        return false;
-    }
+
 }

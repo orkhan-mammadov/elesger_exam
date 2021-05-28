@@ -2,6 +2,8 @@ package com.orkhanmammadov.codeanalysis.comment;
 
 import com.orkhanmammadov.codeanalysis.SourceCodeElement;
 
+import java.util.Locale;
+
 public class SingleLineComment extends SourceCodeElement implements SuspiciousCommentDetector {
 
     private String comment;
@@ -12,8 +14,4 @@ public class SingleLineComment extends SourceCodeElement implements SuspiciousCo
         this.startColumn = columnIndex;
     }
 
-    @Override
-    public boolean isSuspicious() {
-        return false;
-    }
 }
